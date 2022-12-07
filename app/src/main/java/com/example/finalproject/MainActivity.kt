@@ -23,7 +23,12 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         val mercury=findViewById<ImageView>(R.id.imageViewmercury)
         val earthbutton=findViewById<ImageView>(R.id.earth)
+        val button=findViewById<Button>(R.id.button2)
+        button.setOnClickListener {
+            val intent1=Intent(this,Sqlite::class.java)
+            startActivity(intent1)
 
+        }
         mercury.setOnClickListener {
             Log.i(TAG,"Selected Mercury")
         }
@@ -33,6 +38,7 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
     }
+
 
 //    private fun getmydata(){
 //
