@@ -9,46 +9,66 @@
     tools:context=".Sqlite">
 
     <!-- Edit text to enter name -->
+
     <EditText
         android:id="@+id/enterName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Enter Name"
+        android:hint="Enter Planet Name"
         android:textSize="22sp"
         android:layout_margin="20sp"/>
 
     <!-- Edit text to enter age -->
+
+    <!-- Button to add Name -->
+
+    <!-- Button to print Name -->
+
     <EditText
         android:id="@+id/enterAge"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="20sp"
-        android:textSize="22sp"
-        android:hint="Enter Age"/>
+        android:hint="Enter Number of Moons"
+        android:textSize="22sp" />
 
-    <!-- Button to add Name -->
-    <Button
-        android:id="@+id/addName"
-        android:layout_width="150sp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="20sp"
-        android:background="#4CAF50"
-        android:text="Add Name"
-        android:textColor="#ffffff"
-        android:textSize="20sp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_gravity="center_vertical"
+        >
 
-    <!-- Button to print Name -->
-    <Button
-        android:id="@+id/printName"
-        android:layout_width="150sp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="20sp"
-        android:background="#4CAF50"
-        android:text="Print Name"
-        android:textColor="#ffffff"
-        android:textSize="20sp" />
+        <Button
+            android:id="@+id/Delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Delete" />
+
+        <Button
+            android:id="@+id/printName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Show"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            />
+
+        <Button
+            android:id="@+id/addName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Add Moon"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+    </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -62,7 +82,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="20sp"
-            android:text="Name\n\n"
+            android:text="Planet\n\n"
             android:textSize="22sp"
             android:padding="10sp"
             android:textColor="#000000"/>
@@ -75,10 +95,21 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="20sp"
-            android:text="Age\n\n"
+            android:text="Moons\n\n"
             android:textSize="22sp"
             android:padding="10sp"
             android:textColor="#000000"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+        </ScrollView>
 
     </LinearLayout>
 

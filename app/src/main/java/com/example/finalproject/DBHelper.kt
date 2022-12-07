@@ -1,9 +1,12 @@
 package com.example.finalproject
 import android.content.ContentValues
+import android.content.ContentValues.TAG
 import android.content.Context
 import android.database.Cursor
 import android.database.sqlite.SQLiteDatabase
 import android.database.sqlite.SQLiteOpenHelper
+import android.util.Log
+import android.widget.Toast
 
 class DBHelper(context: Context, factory: SQLiteDatabase.CursorFactory?) :
     SQLiteOpenHelper(context, DATABASE_NAME, factory, DATABASE_VERSION) {
@@ -68,6 +71,23 @@ class DBHelper(context: Context, factory: SQLiteDatabase.CursorFactory?) :
         return db.rawQuery("SELECT * FROM " + TABLE_NAME, null)
 
     }
+
+    fun deletedb(){
+        val db=this.writableDatabase
+        var count="SELECT count(*) FROM"+TABLE_NAME
+        var mcursor=db.rawQuery(count,null)
+        mcursor.moveToFirst()
+        val icount=mcursor.getInt(0)
+        if(icount>0){
+            db.execSQL("delete from "+ TABLE_NAME)
+
+        }
+        else{
+            Log.i(TAG,"No table to delete")
+        }
+
+    }
+
 
     companion object{
         // here we have defined variables for our database

@@ -1,7 +1,9 @@
 package com.example.finalproject
 
+import android.content.ContentValues.TAG
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
@@ -20,6 +22,16 @@ class Sqlite : AppCompatActivity() {
         val enterAge=findViewById<EditText>(R.id.enterAge)
         val Name=findViewById<TextView>(R.id.Name)
         val Age=findViewById<TextView>(R.id.Age)
+        val Delete=findViewById<Button>(R.id.Delete)
+
+        Delete.setOnClickListener{
+            val db=DBHelper(this,null)
+
+                db.deletedb()
+
+
+
+        }
         addName.setOnClickListener{
 
             // below we have created
@@ -60,16 +72,19 @@ class Sqlite : AppCompatActivity() {
 
             // moving the cursor to first position and
             // appending value in the text view
-            cursor!!.moveToFirst()
-            Name.append(cursor.getString(cursor.getColumnIndex(DBHelper.NAME_COl)) + "\n")
-            Age.append(cursor.getString(cursor.getColumnIndex(DBHelper.AGE_COL)) + "\n")
 
-            // moving our cursor to next
-            // position and appending values
-            while(cursor.moveToNext()){
+            cursor!!.moveToFirst()
+
                 Name.append(cursor.getString(cursor.getColumnIndex(DBHelper.NAME_COl)) + "\n")
                 Age.append(cursor.getString(cursor.getColumnIndex(DBHelper.AGE_COL)) + "\n")
-            }
+
+                // moving our cursor to next
+                // position and appending values
+                while(cursor.moveToNext()){
+                    Name.append(cursor.getString(cursor.getColumnIndex(DBHelper.NAME_COl)) + "\n")
+                    Age.append(cursor.getString(cursor.getColumnIndex(DBHelper.AGE_COL)) + "\n")
+                }
+
 
             // at last we close our cursor
             cursor.close()
