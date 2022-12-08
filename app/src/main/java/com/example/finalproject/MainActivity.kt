@@ -15,9 +15,7 @@ import com.amplifyframework.core.Amplify
 class MainActivity : AppCompatActivity() {
     private lateinit var viewModel:MainActivityViewModel
 private lateinit var name:TextView
-private fun loadthetext(){
-    this.name.text=this.viewModel.name
-}
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
