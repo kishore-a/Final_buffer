@@ -17,7 +17,7 @@ class Signin : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_signin)
-        viewModel=ViewModelProvider(this).get(MainActivityViewModel::class.java)
+        viewModel= ViewModelProvider(this)[MainActivityViewModel::class.java]
         val signin=findViewById<Button>(R.id.signin)
         val username=findViewById<EditText>(R.id.usernamesignin)
         val password=findViewById<EditText>(R.id.passwordsignin)
@@ -34,6 +34,7 @@ class Signin : AppCompatActivity() {
                         Log.i("AuthQuickstart", "Sign in succeeded");
                         viewModel.updateName(username.text.toString(),);
                         val intent= Intent(this,MainActivity::class.java)
+                        println(viewModel.name)
                         startActivity(intent)
                     } else {
                         Log.i("AuthQuickstart", "Sign in not complete")

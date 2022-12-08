@@ -41,7 +41,6 @@
                 android:id="@+id/name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="TextView"
                 android:textColor="#E8E5E5" />
 
             <TextView
@@ -196,6 +195,28 @@
                         android:layout_weight="1"
                         android:clickable="true"
                         app:srcCompat="@drawable/nasa" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Some photos"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18dp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <androidx.fragment.app.FragmentContainerView
+                        android:id="@id/fragmentblank12"
+                        android:name="com.example.finalproject.BlankFragment12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        tools:layout="@layout/fragment_blank12" />
+
                 </LinearLayout>
 
                 <LinearLayout

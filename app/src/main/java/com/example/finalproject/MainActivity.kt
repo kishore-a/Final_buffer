@@ -23,11 +23,11 @@ private fun loadthetext(){
         setContentView(R.layout.activity_main)
 
         val mercury=findViewById<ImageView>(R.id.imageViewmercury)
-        viewModel= ViewModelProvider(this).get(MainActivityViewModel::class.java)
+        viewModel= ViewModelProvider(this)[MainActivityViewModel::class.java]
         name=findViewById(R.id.name)
 
         this.loadthetext()
-
+        name.text=viewModel.name
         val nasafact=findViewById<ImageView>(R.id.nasafact)
         val button=findViewById<ImageView>(R.id.stars_notes)
         val signout=findViewById<Button>(R.id.Signout)
