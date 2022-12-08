@@ -38,6 +38,13 @@
             </LinearLayout>
 
             <TextView
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textColor="#E8E5E5" />
+
+            <TextView
                 android:id="@+id/textView3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -197,12 +204,20 @@
                     android:orientation="horizontal">
 
                     <Button
-                        android:id="@+id/signup"
-                        android:layout_width="wrap_content"
+                        android:id="@+id/clickme"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="Button" />
+                        android:layout_marginRight="10dp"
+                        android:text="Click me" />
                 </LinearLayout>
+
+                <Button
+                    android:id="@+id/Signout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:text="Sign Out" />
 
             </LinearLayout>
 

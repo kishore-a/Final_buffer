@@ -3,12 +3,21 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Mobile_app_development/final-project-and-presentation-bass-pro-tech/app/src/main/res/drawable/ic_launcher_foreground.xml" value="0.2315" />
+        <entry key="..\:/Mobile_app_development/final-project-and-presentation-bass-pro-tech/app/src/main/res/drawable/receive_round_box.xml" value="0.2315" />
+        <entry key="..\:/Mobile_app_development/final-project-and-presentation-bass-pro-tech/app/src/main/res/drawable/round_button.xml" value="0.2315" />
+        <entry key="..\:/Mobile_app_development/final-project-and-presentation-bass-pro-tech/app/src/main/res/drawable/send_round_box.xml" value="0.2315" />
+        <entry key="..\:/Mobile_app_development/final-project-and-presentation-bass-pro-tech/app/src/main/res/layout/activity_chatbot.xml" value="0.1935897435897436" />
+        <entry key="..\:/Mobile_app_development/final-project-and-presentation-bass-pro-tech/app/src/main/res/layout/activity_clickme.xml" value="0.32051282051282054" />
         <entry key="..\:/Mobile_app_development/final-project-and-presentation-bass-pro-tech/app/src/main/res/layout/activity_confirmsignup.xml" value="0.264" />
+        <entry key="..\:/Mobile_app_development/final-project-and-presentation-bass-pro-tech/app/src/main/res/layout/activity_earth.xml" value="0.264" />
         <entry key="..\:/Mobile_app_development/final-project-and-presentation-bass-pro-tech/app/src/main/res/layout/activity_imageoftheday.xml" value="0.264" />
         <entry key="..\:/Mobile_app_development/final-project-and-presentation-bass-pro-tech/app/src/main/res/layout/activity_main.xml" value="0.264" />
         <entry key="..\:/Mobile_app_development/final-project-and-presentation-bass-pro-tech/app/src/main/res/layout/activity_mercury.xml" value="0.29743589743589743" />
+        <entry key="..\:/Mobile_app_development/final-project-and-presentation-bass-pro-tech/app/src/main/res/layout/activity_signin.xml" value="0.2747395833333333" />
         <entry key="..\:/Mobile_app_development/final-project-and-presentation-bass-pro-tech/app/src/main/res/layout/activity_signup.xml" value="0.264" />
         <entry key="..\:/Mobile_app_development/final-project-and-presentation-bass-pro-tech/app/src/main/res/layout/activity_sqlite.xml" value="0.6" />
+        <entry key="..\:/Mobile_app_development/final-project-and-presentation-bass-pro-tech/app/src/main/res/layout/message_item.xml" value="0.4" />
       </map>
     </option>
   </component>

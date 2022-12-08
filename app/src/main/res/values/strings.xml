@@ -9,4 +9,5 @@
     <string name="invalid_username">Not a valid username</string>
     <string name="invalid_password">Password must be >5 characters</string>
     <string name="login_failed">"Login failed"</string>
+    <string name="Earth" translatable="false">Earth is the third planet from the Sun and the only astronomical object known to harbor life. While large volumes of water can be found throughout the Solar System, only Earth sustains liquid surface water. About 71% of Earth surface is made up of the ocean, dwarfing Earth polar ice, lakes, and rivers. The remaining 29% of Earth surface is land, consisting of continents and islands. Earth surface layer is formed of several slowly moving tectonic plates, interacting to produce mountain ranges, volcanoes, and earthquakes. Earth liquid outer core generates the magnetic field that shapes the magnetosphere of the Earth, deflecting destructive solar winds.</string>
 </resources>

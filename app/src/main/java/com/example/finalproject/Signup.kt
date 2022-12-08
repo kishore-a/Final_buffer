@@ -1,10 +1,12 @@
 package com.example.finalproject
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.widget.Button
 import android.widget.EditText
+import android.widget.TextView
 import com.amplifyframework.auth.AuthUserAttributeKey
 import com.amplifyframework.auth.options.AuthSignUpOptions
 import com.amplifyframework.core.Amplify
@@ -19,12 +21,19 @@ class Signup : AppCompatActivity() {
         val password=findViewById<EditText>(R.id.password)
         val confirm_code=findViewById<EditText>(R.id.code)
         val code =findViewById<Button>(R.id.codeconfirm)
+        val signin=findViewById<TextView>(R.id.signinsignup)
+        signin.setOnClickListener{
+            val intent1= Intent(this,Signin::class.java)
+            startActivity(intent1)
+        }
         code.setOnClickListener {
             Amplify.Auth.confirmSignUp(
                 username.text.toString(), confirm_code.text.toString(),
                 { result ->
                     if (result.isSignUpComplete) {
                         Log.i("AuthQuickstart", "Confirm signUp succeeded")
+                        val intent2=Intent(this,Signin::class.java)
+                        startActivity(intent2)
                     } else {
                         Log.i("AuthQuickstart","Confirm sign up not complete")
                     }
