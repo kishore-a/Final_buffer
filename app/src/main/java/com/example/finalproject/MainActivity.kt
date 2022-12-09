@@ -24,7 +24,7 @@ private lateinit var name:TextView
         viewModel= ViewModelProvider(this)[MainActivityViewModel::class.java]
         name=findViewById(R.id.name)
 
-        this.loadthetext()
+//        this.loadthetext()
         name.text=viewModel.name
         val nasafact=findViewById<ImageView>(R.id.nasafact)
         val button=findViewById<ImageView>(R.id.stars_notes)

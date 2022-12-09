@@ -44,7 +44,7 @@ object BotResponse {
                 date.toString()
             }
             //Planet earth
-            message.contains("Which planet are in between Earth and the sun") -> {
+            message.contains("earth")&&message.contains("sun") -> {
                 when (random) {
                     0 -> "Mercury and Venus"
                     1 -> "Venus and Mercury"
@@ -53,7 +53,7 @@ object BotResponse {
                 }
             }
             //earth radius
-            message.contains("How big is Earth’s radius") -> {
+            message.contains("earth")&&message.contains("radius") -> {
                 when (random) {
                     0 -> "4000 miles"
                     1 -> "6437 kilometer"
